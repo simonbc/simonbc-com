@@ -11,21 +11,6 @@ layout: base.njk
   </p>
 </section>
 
-<section class="section" aria-labelledby="how">
-  <p class="eyebrow">Process</p>
-  <h2 id="how">How it works</h2>
-  {% include "steps.njk" %}
-  <p class="note">{{ offer.async }}</p>
-</section>
-
-<section class="section" aria-labelledby="pricing">
-  <p class="eyebrow">Pricing</p>
-  <h2 id="pricing">A pilot, then a monthly crew</h2>
-  {%- set full = false %}
-  {% include "plans.njk" %}
-  <p class="more"><a href="/work/">Read the details</a></p>
-</section>
-
 {%- set posts = collections.posts | reverse | head(3) %}
 {%- if posts.length %}
 <section class="section prose-width" aria-labelledby="writing">

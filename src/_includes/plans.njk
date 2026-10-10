@@ -3,7 +3,6 @@
   <section class="card plan{% if loop.first %} plan-first{% endif %}">
     <h3>{{ plan.name }}</h3>
     <p class="price"><span class="amount">{{ plan.price }}</span> <span class="unit">{{ plan.unit }}</span></p>
-    {%- if full %}
     <p>{{ plan.text }}</p>
     {%- if plan.list %}
     <p class="list-title">{{ plan.listTitle }}</p>
@@ -12,9 +11,6 @@
       <li>{{ item }}</li>
       {%- endfor %}
     </ul>
-    {%- endif %}
-    {%- else %}
-    <p>{{ plan.summary }}</p>
     {%- endif %}
   </section>
   {%- endfor %}

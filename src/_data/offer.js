@@ -27,7 +27,6 @@ export default {
       name: "Start with a two week pilot",
       price: "€4,000",
       unit: "fixed, excl. VAT",
-      summary: "One clearly scoped piece of software in two weeks.",
       text: "One clearly scoped piece of software in two weeks, for a fixed €4,000 excl. VAT, invoiced at the start. We agree the scope in writing before work begins.",
       listTitle: "Good pilot candidates:",
       list: [
@@ -40,7 +39,6 @@ export default {
       name: "Then a monthly crew",
       price: "€4,500",
       unit: "per month, excl. VAT",
-      summary: "Send as many tasks as you like; one is in progress at a time, and the next starts when it ships.",
       text: "If the pilot works for you, continue on a subscription at €4,500 per month excl. VAT. Send as many tasks as you like; one is in progress at a time, and the next starts when it ships. Reprioritise the queue whenever you want. Pause or cancel from month to month.",
     },
   ],
