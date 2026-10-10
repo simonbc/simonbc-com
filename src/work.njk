@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Work with me
+permalink: /work/
+---
+<section class="hero">
+  <p class="eyebrow">Work with me</p>
+  <h1>Who this is for</h1>
+  <p class="lede">{{ offer.audience }}</p>
+  <p class="lede-2">{{ offer.pitch | safe }}</p>
+</section>
+
+<section class="section" aria-labelledby="how">
+  <h2 id="how">How it works</h2>
+  {% include "steps.njk" %}
+  <p class="note">{{ offer.async }}</p>
+</section>
+
+<section class="section" aria-labelledby="pricing">
+  <h2 id="pricing">Pricing</h2>
+  {%- set full = true %}
+  {% include "plans.njk" %}
+</section>
+
+{% include "next-step.njk" %}

@@ -12,6 +12,12 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2":
+      "fonts/newsreader.woff2",
+    "node_modules/@fontsource-variable/newsreader/files/newsreader-latin-wght-italic.woff2":
+      "fonts/newsreader-italic.woff2",
+  });
 
   eleventyConfig.addFilter("readableDate", (date) =>
     new Date(date).toLocaleDateString("en-GB", {

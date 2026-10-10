@@ -1,10 +1,39 @@
 ---
 layout: base.njk
 ---
-<p class="lede">I'm Simon Carstensen. I build software for teams that know what they want built but have no developers to build it: design studios, agencies and small companies.</p>
-<p>I work with a crew of AI coding agents, run by my own agent harness, <a href="https://skelcrew.dev">Skelcrew</a>, and bring twenty years of judgment about what working software needs.</p>
-<p><a class="button" href="/work/">Work with me</a></p>
+<section class="hero">
+  <h1>I build software for teams without developers.</h1>
+  <p class="lede">For design studios, agencies and small companies with a product idea, an internal tool they keep wishing for, or a prototype that has outgrown Figma.</p>
+  <p class="lede-2">{{ offer.pitch | safe }}</p>
+  <p class="actions">
+    <a class="button" href="/work/">Work with me</a>
+    <a class="button button-quiet" href="mailto:{{ site.email }}">Email me</a>
+  </p>
+</section>
 
-<h2>Latest writing</h2>
-{%- set posts = collections.posts | reverse | head(5) %}
-{% include "post-list.njk" %}
+<section class="section" aria-labelledby="how">
+  <p class="eyebrow">Process</p>
+  <h2 id="how">How it works</h2>
+  {% include "steps.njk" %}
+  <p class="note">{{ offer.async }}</p>
+</section>
+
+<section class="section" aria-labelledby="pricing">
+  <p class="eyebrow">Pricing</p>
+  <h2 id="pricing">A pilot, then a monthly crew</h2>
+  {%- set full = false %}
+  {% include "plans.njk" %}
+  <p class="more"><a href="/work/">Read the details</a></p>
+</section>
+
+{%- set posts = collections.posts | reverse | head(3) %}
+{%- if posts.length %}
+<section class="section prose-width" aria-labelledby="writing">
+  <p class="eyebrow">Writing</p>
+  <h2 id="writing">Latest posts</h2>
+  {% include "post-list.njk" %}
+  <p class="more"><a href="/writing/">All writing</a></p>
+</section>
+{%- endif %}
+
+{% include "next-step.njk" %}
