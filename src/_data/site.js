@@ -6,4 +6,8 @@ export default {
   url: "https://simonbc.com",
   email: "me@simonbc.com",
   language: "en",
+  profiles: [
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/simoncarstensen/" },
+    { name: "X", url: "https://x.com/simoncarstensen" },
+  ],
 };
