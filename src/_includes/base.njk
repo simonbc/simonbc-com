@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.title }}</a>
+    <nav aria-label="Main">
+      <ul>
+        {%- for item in [["/work/", "Work with me"], ["/writing/", "Writing"], ["/about/", "About"]] %}
+        <li><a href="{{ item[0] }}"{% if page.url.startsWith(item[0]) %} aria-current="page"{% endif %}>{{ item[1] }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="/feed.xml">Feed</a></p>
+  </footer>
+</body>
+</html>

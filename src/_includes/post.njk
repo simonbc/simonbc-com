@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <p class="meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></p>
+  </header>
+  {{ content | safe }}
+</article>
+<p><a href="/writing/">All writing</a></p>

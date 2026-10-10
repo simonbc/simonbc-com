@@ -1,0 +1,23 @@
+{
+  "name": "simonbc-com",
+  "version": "1.0.0",
+  "description": "simonbc.com",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "rm -rf _site && eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonbc/simonbc-com.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/simonbc/simonbc-com/issues"
+  },
+  "homepage": "https://github.com/simonbc/simonbc-com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.1.0"
+  },
+  "private": true
+}

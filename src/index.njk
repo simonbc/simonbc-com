@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+<p class="lede">I'm Simon Carstensen. I build software for teams that know what they want built but have no developers to build it: design studios, agencies and small companies.</p>
+<p>I work with a crew of AI coding agents, run by my own agent harness, <a href="https://skelcrew.dev">Skelcrew</a>, and bring twenty years of judgment about what working software needs.</p>
+<p><a class="button" href="/work/">Work with me</a></p>
+
+<h2>Latest writing</h2>
+{%- set posts = collections.posts | reverse | head(5) %}
+{% include "post-list.njk" %}

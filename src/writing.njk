@@ -1,0 +1,9 @@
+---
+layout: base.njk
+title: Writing
+permalink: /writing/
+---
+<h1>Writing</h1>
+<p>Notes on building software with AI coding agents, written in public. Subscribe with the <a href="/feed.xml">Atom feed</a>.</p>
+{%- set posts = collections.posts | reverse %}
+{% include "post-list.njk" %}
