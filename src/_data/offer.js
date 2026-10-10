@@ -1,15 +1,15 @@
 export default {
   headline: "I set up software factories for small teams.",
   intro:
-    "A software factory is a pipeline of AI coding agents that takes a task from spec to code to review to ship. You step in only when there's a decision to make.",
+    "A software factory is a crew of AI coding agents working in parallel and unattended on a server of your own. Each task goes from spec to code to review to ship, and you step in only when there's a decision to make.",
   audience:
     "Small teams that want to build software with AI coding agents without chatting with them all day. If you have developers, the factory lets them hand off well defined work and spend their time on the decisions. If you don't, it turns the tasks you already write into working software, with me providing the engineering judgment.",
   pitch:
-    "I build it around your codebase and the tools you already use, on <a href=\"https://skelcrew.dev\">Skelcrew</a>, my own agent harness. Then I can run it for you, bringing twenty years as a software engineer to the decisions that need a human.",
+    "I build it around your codebase and the tools you already use, on <a href=\"https://skelcrew.dev\">Skelcrew</a>, my own agent harness for running many agents in parallel, unattended and remotely. Then I can run it for you, bringing twenty years as a software engineer to the decisions that need a human.",
   layers: [
     {
       title: "Where agents run",
-      text: "A server of your own, with the agent harnesses set up and git worktrees so agents don't trip over each other.",
+      text: "A server of your own, so agents keep working unattended while you're elsewhere. Each agent gets its own git worktree, so many of them can work at once without tripping over each other.",
     },
     {
       title: "What agents know",
@@ -17,7 +17,7 @@ export default {
     },
     {
       title: "How work moves",
-      text: "A Skelcrew pipeline: spec, build, review and verification, with each step passing before the next. Work lands as a pull request.",
+      text: "A Skelcrew pipeline: spec, build, review and verification, with each step passing before the next. Many tasks move through it at once, and each lands as a pull request.",
     },
     {
       title: "Where tasks come from",
