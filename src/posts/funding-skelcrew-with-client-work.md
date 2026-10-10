@@ -5,6 +5,8 @@ description: Why I'm building software for clients with my own agent harness, an
 draft: false
 ---
 
+> **Update:** the offer has changed since I wrote this. I now set up software factories for small teams and can run them for you. See [Work with me](/work/) for the current details.
+
 I've been experimenting with AI coding tools since April, and in September I started building Skelcrew, my own agent harness. It runs coding agents through tasks, from a short description to working software, with me acting as the team lead rather than the person typing the code.
 
 Starting today, I'm also taking on clients. I'll build software for teams that know what they want but have no developers to build it, and I'll build it with Skelcrew.
