@@ -1,5 +1,5 @@
 export default {
-  headline: 'I set up <span class="highlight">software factories</span> for small teams.',
+  headline: 'I set up <span class="highlight">software factories</span> <span class="nowrap">for small teams.</span>',
   intro:
     "A software factory is a crew of AI coding agents working in parallel and unattended on a server of your own. Each task goes from spec to code to review to ship, and you step in only when there's a decision to make.",
   audience:

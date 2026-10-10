@@ -136,8 +136,9 @@ p { margin: 0 0 1.1rem; }
 
 .hero { max-width: 50rem; padding: 3rem 0 4.5rem; }
 @media (min-width: 48rem) { .hero { padding: 5rem 0 6rem; } }
-.highlight { color: var(--accent-ink); white-space: nowrap; }
-@media (max-width: 24rem) { .highlight { white-space: normal; } }
+.highlight { color: var(--accent-ink); }
+.highlight, .nowrap { white-space: nowrap; }
+@media (max-width: 24rem) { .highlight, .nowrap { white-space: normal; } }
 .lede { font-size: clamp(1.05rem, 1rem + 0.35vw, 1.2rem); line-height: 1.6; }
 .lede-2 { color: var(--muted); font-size: 1rem; max-width: 46rem; }
 .lede-2 a { color: var(--text); }
