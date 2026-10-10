@@ -25,10 +25,10 @@ export default {
   plans: [
     {
       name: "Start with a two week pilot",
-      price: "30,000 DKK",
+      price: "€4,000",
       unit: "fixed, excl. VAT",
       summary: "One clearly scoped piece of software in two weeks.",
-      text: "One clearly scoped piece of software in two weeks, for a fixed 30,000 DKK excl. VAT, invoiced at the start. We agree the scope in writing before work begins.",
+      text: "One clearly scoped piece of software in two weeks, for a fixed €4,000 excl. VAT, invoiced at the start. We agree the scope in writing before work begins.",
       listTitle: "Good pilot candidates:",
       list: [
         "a working prototype of a product you have already designed",
@@ -38,10 +38,10 @@ export default {
     },
     {
       name: "Then a monthly crew",
-      price: "35,000 DKK",
+      price: "€4,500",
       unit: "per month, excl. VAT",
       summary: "Send as many tasks as you like; one is in progress at a time, and the next starts when it ships.",
-      text: "If the pilot works for you, continue on a subscription at 35,000 DKK per month excl. VAT. Send as many tasks as you like; one is in progress at a time, and the next starts when it ships. Reprioritise the queue whenever you want. Pause or cancel from month to month.",
+      text: "If the pilot works for you, continue on a subscription at €4,500 per month excl. VAT. Send as many tasks as you like; one is in progress at a time, and the next starts when it ships. Reprioritise the queue whenever you want. Pause or cancel from month to month.",
     },
   ],
   nextStep:
