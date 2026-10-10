@@ -59,7 +59,7 @@ h2 { font-size: 1.3rem; margin: 2.5rem 0 0.75rem; }
 
 .lede { font-size: 1.3rem; line-height: 1.5; }
 
-li + li { margin-top: 0.4rem; }
+main li + li { margin-top: 0.4rem; }
 
 .button {
   display: inline-block;
