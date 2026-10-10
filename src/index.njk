@@ -2,8 +2,8 @@
 layout: base.njk
 ---
 <section class="hero">
-  <h1>I build software for teams without developers.</h1>
-  <p class="lede">For design studios, agencies and small companies with a product idea, an internal tool they keep wishing for, or a prototype that has outgrown Figma.</p>
+  <h1>{{ offer.headline }}</h1>
+  <p class="lede">{{ offer.intro }}</p>
   <p class="lede-2">{{ offer.pitch | safe }}</p>
   <p class="actions">
     <a class="button" href="/work/">Work with me</a>
@@ -20,3 +20,5 @@ layout: base.njk
   <p class="more"><a href="/writing/">All writing</a></p>
 </section>
 {%- endif %}
+
+{% include "next-step.njk" %}

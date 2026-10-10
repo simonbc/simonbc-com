@@ -5,9 +5,20 @@ permalink: /work/
 ---
 <section class="hero">
   <p class="eyebrow">Work with me</p>
-  <h1>Who this is for</h1>
-  <p class="lede">{{ offer.audience }}</p>
+  <h1>{{ offer.headline }}</h1>
+  <p class="lede">{{ offer.intro }}</p>
   <p class="lede-2">{{ offer.pitch | safe }}</p>
+</section>
+
+<section class="section" aria-labelledby="who">
+  <h2 id="who">Who this is for</h2>
+  <p class="section-text">{{ offer.audience }}</p>
+</section>
+
+<section class="section" aria-labelledby="what">
+  <h2 id="what">What I set up</h2>
+  {% include "layers.njk" %}
+  <p class="note">{{ offer.oversight }}</p>
 </section>
 
 <section class="section" aria-labelledby="how">

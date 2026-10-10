@@ -4,14 +4,6 @@
     <h3>{{ plan.name }}</h3>
     <p class="price"><span class="amount">{{ plan.price }}</span> <span class="unit">{{ plan.unit }}</span></p>
     <p>{{ plan.text }}</p>
-    {%- if plan.list %}
-    <p class="list-title">{{ plan.listTitle }}</p>
-    <ul>
-      {%- for item in plan.list %}
-      <li>{{ item }}</li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
   </section>
   {%- endfor %}
 </div>

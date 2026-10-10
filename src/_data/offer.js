@@ -1,47 +1,65 @@
 export default {
+  headline: "I set up software factories for small teams.",
+  intro:
+    "A software factory is a pipeline of AI coding agents that takes a task from spec to code to review to ship. You step in only when there's a decision to make.",
   audience:
-    "Teams that know what they want built but have no developers to build it: design studios, agencies and small companies with a product idea, an internal tool they keep wishing for, or a prototype that has outgrown Figma.",
+    "Small teams that want to build software with AI coding agents without chatting with them all day. If you have developers, the factory lets them hand off well defined work and spend their time on the decisions. If you don't, it turns the tasks you already write into working software, with me providing the engineering judgment.",
   pitch:
-    "You bring the ideas and the taste. I bring a crew of AI coding agents, run by my own agent harness, <a href=\"https://skelcrew.dev\">Skelcrew</a>, and twenty years of judgment about what working software needs.",
-  steps: [
+    "I build it around your codebase and the tools you already use, on <a href=\"https://skelcrew.dev\">Skelcrew</a>, my own agent harness. Then I can run it for you, bringing twenty years as a software engineer to the decisions that need a human.",
+  layers: [
     {
-      title: "You send a task.",
-      text: "A short description, a mockup, a screen recording: whatever you would give a developer.",
+      title: "Where agents run",
+      text: "A server of your own, with the agent harnesses set up and git worktrees so agents don't trip over each other.",
     },
     {
-      title: "I scope it.",
-      text: "Each task is sized and planned. If something is unclear, I ask a few short questions.",
+      title: "What agents know",
+      text: "An AGENTS.md, skills and conventions written for your codebase, so agents follow your rules from the first task.",
     },
     {
-      title: "Agents build, I lead.",
-      text: "The agent crew writes the code. I own the architecture, test the result and make sure it holds up.",
+      title: "How work moves",
+      text: "A Skelcrew pipeline: spec, build, review and verification, with each step passing before the next. Work lands as a pull request.",
     },
     {
-      title: "You get software you can use.",
-      text: "Shipped to a preview or live, with a short note on what changed.",
+      title: "Where tasks come from",
+      text: "Tasks come in from Linear, Jira or GitHub Issues, and status flows back, so the factory fits the way you already plan work. Finished work hands over to the way you already deploy.",
     },
   ],
-  async: "Everything runs async: written updates, no standing meetings. All code and accounts are yours.",
-  plans: [
+  oversight:
+    "On top of it all, you see what needs a decision right now and a record of what happened. Agents ask clear questions instead of pulling someone into a chat. The agents do the work; people make the calls.",
+  steps: [
     {
-      name: "Start with a two week pilot",
-      price: "€4,000",
-      unit: "fixed, excl. VAT",
-      text: "One clearly scoped piece of software in two weeks, for a fixed €4,000 excl. VAT, invoiced at the start. We agree the scope in writing before work begins.",
-      listTitle: "Good pilot candidates:",
-      list: [
-        "a working prototype of a product you have already designed",
-        "an internal tool that replaces a spreadsheet or a manual process",
-        "a small customer facing web app or feature",
-      ],
+      title: "We agree the setup.",
+      text: "A 30 minute call to pick the codebase, your tools and a first real task to run through the factory.",
     },
     {
-      name: "Then a monthly crew",
+      title: "I build the factory.",
+      text: "Over two weeks I set up each layer around your codebase and connect it to your tools.",
+    },
+    {
+      title: "We run real tasks.",
+      text: "Your first tasks go through the factory end to end. I tune it where it stumbles.",
+    },
+    {
+      title: "You own it.",
+      text: "A written handover of how it works and how to change it. Run it yourself, or have me run it for you.",
+    },
+  ],
+  async:
+    "Everything runs async: written updates, no standing meetings. All code and accounts are yours, and model and server costs go on your own accounts.",
+  plans: [
+    {
+      name: "Factory setup",
+      price: "€6,000",
+      unit: "fixed, excl. VAT",
+      text: "The full factory on one codebase in two weeks, invoiced at the start. We agree the scope in writing before work begins. It ends with real tasks shipped through it and a handover.",
+    },
+    {
+      name: "Running the factory",
       price: "€4,500",
       unit: "per month, excl. VAT",
-      text: "If the pilot works for you, continue on a subscription at €4,500 per month excl. VAT. Send as many tasks as you like; one is in progress at a time, and the next starts when it ships. Reprioritise the queue whenever you want. Pause or cancel from month to month.",
+      text: "I run the factory for you and bring the human judgment it needs: approving specs, answering the agents' questions, owning the architecture and making sure every result holds up. I also keep the factory itself tuned as your codebase changes. Send as many tasks as you like and reprioritise the queue whenever you want. Pause or cancel from month to month.",
     },
   ],
   nextStep:
-    "Pick one thing you want built. We spend 30 minutes agreeing the pilot scope, and work starts the following week.",
+    "Pick one codebase and one thing you want built. We spend 30 minutes agreeing the setup, and work starts the following week.",
 };

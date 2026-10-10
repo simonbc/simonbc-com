@@ -1,0 +1,8 @@
+<ul class="layers">
+  {%- for layer in offer.layers %}
+  <li class="card">
+    <h3>{{ layer.title }}</h3>
+    <p>{{ layer.text }}</p>
+  </li>
+  {%- endfor %}
+</ul>
