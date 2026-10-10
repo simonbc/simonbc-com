@@ -59,15 +59,11 @@ The queue should be sorted by what unblocks the most work, not by what arrived f
 
 Every correction I make should go back into the factory: into AGENTS.md, a skill or a check, so the same mistake doesn't come back. Review time on a codebase should go down over time. If it doesn't, the factory isn't learning, and that's the thing to fix.
 
-## Fitting it into sprints
+## Working with clients
 
-I work with clients in two week sprints, and the review flow fits that shape:
+I don't have a fixed process for client work yet, and I expect it to differ from project to project. But a rough shape keeps showing up: a burst of review at the start, while goals are turned into specs and acceptance criteria, then long stretches where agents build unattended and I work through the queue, and finally the client checking the result on a preview against what we agreed.
 
-- **At the start**, agents turn the goals into specs, and I approve them in one sitting. That's probably the most valuable hour of the sprint.
-- **During the sprint**, the builds run unattended, and I work through the queue at set times, riskiest first.
-- **At the end**, the client checks the work on a preview, against the criteria we agreed at the start.
-
-How much work is in progress at once should be set by how much I can review, not by how many agents can run. If the queue grows faster than I can clear it, the agents slow down, not me.
+Whatever the shape, one rule seems right: how much work is in progress at once should be set by how much I can review, not by how many agents can run. If the queue grows faster than I can clear it, the agents slow down, not me.
 
 ## Measuring it
 
