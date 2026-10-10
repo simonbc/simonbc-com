@@ -5,10 +5,10 @@ layout: base.njk
   <h1>{{ offer.headline | safe }}</h1>
   <p class="lede">{{ offer.intro }}</p>
   <p class="lede-2">{{ offer.pitch | safe }}</p>
-  <p class="actions">
-    <a class="button" href="/work/">Work with me</a>
-    <a class="button button-quiet" href="mailto:{{ site.email }}">Email me</a>
-  </p>
+</section>
+
+<section class="section paths-section" aria-label="Two ways to work with me">
+  {% include "paths.njk" %}
 </section>
 
 {%- set posts = collections.posts | reverse | head(3) %}

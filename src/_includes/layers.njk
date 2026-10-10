@@ -1,7 +1,7 @@
 <ul class="layers">
-  {%- for layer in offer.layers %}
+  {%- for layer in offer.factory.layers %}
   <li class="card">
-    <h3>{{ layer.title }}</h3>
+    <h4>{{ layer.title }}</h4>
     <p>{{ layer.text }}</p>
   </li>
   {%- endfor %}

@@ -7,28 +7,44 @@ permalink: /work/
   <p class="eyebrow">Work with me</p>
   <h1>{{ offer.headline | safe }}</h1>
   <p class="lede">{{ offer.intro }}</p>
-  <p class="lede-2">{{ offer.pitch | safe }}</p>
+  <p class="lede-2">{{ offer.pitch | safe }} I work with small teams in one of two ways, depending on whether you have developers of your own.</p>
+  <p class="actions">
+    <a class="button" href="#factory">Have developers?</a>
+    <a class="button button-quiet" href="#build">No developers?</a>
+  </p>
 </section>
 
-<section class="section" aria-labelledby="who">
-  <h2 id="who">Who this is for</h2>
-  <p class="section-text">{{ offer.audience }}</p>
-</section>
+<section class="section" id="factory" aria-labelledby="factory-title">
+  <p class="eyebrow">Have developers?</p>
+  <h2 id="factory-title">I set up your factory.</h2>
+  <p class="section-text">{{ offer.factory.intro }}</p>
 
-<section class="section" aria-labelledby="what">
-  <h2 id="what">What I set up</h2>
+  <h3 class="sub">What I set up</h3>
   {% include "layers.njk" %}
-  <p class="note">{{ offer.oversight }}</p>
-</section>
+  <p class="note">{{ offer.factory.oversight }}</p>
 
-<section class="section" aria-labelledby="how">
-  <h2 id="how">How it works</h2>
+  <h3 class="sub">How it works</h3>
+  {%- set steps = offer.factory.steps %}
   {% include "steps.njk" %}
-  <p class="note">{{ offer.async }}</p>
+  <p class="note">{{ offer.factory.ownership }}</p>
+
+  <h3 class="sub">Pricing</h3>
+  {%- set plans = offer.factory.plans %}
+  {% include "plans.njk" %}
 </section>
 
-<section class="section" aria-labelledby="pricing">
-  <h2 id="pricing">Pricing</h2>
+<section class="section" id="build" aria-labelledby="build-title">
+  <p class="eyebrow">No developers?</p>
+  <h2 id="build-title">I build it for you.</h2>
+  <p class="section-text">{{ offer.build.intro }}</p>
+
+  <h3 class="sub">How it works</h3>
+  {%- set steps = offer.build.steps %}
+  {% include "steps.njk" %}
+  <p class="note">{{ offer.build.ownership }}</p>
+
+  <h3 class="sub">Pricing</h3>
+  {%- set plans = offer.build.plans %}
   {% include "plans.njk" %}
 </section>
 
