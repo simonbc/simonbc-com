@@ -61,7 +61,7 @@ Every correction I make should go back into the factory: into AGENTS.md, a skill
 
 ## Working with clients
 
-I don't have a fixed process for client work yet, and I expect it to differ from project to project. But a rough shape keeps showing up: a burst of review at the start, while goals are turned into specs and acceptance criteria, then long stretches where agents build unattended and I work through the queue, and finally the client checking the result on a preview against what we agreed.
+I don't have a fixed process for client work yet, and I expect it to differ from project to project. But I expect a rough shape: a burst of review at the start, while goals are turned into specs and acceptance criteria, then long stretches where agents build unattended and I work through the queue, and finally the client checking the result on a preview against what we agreed.
 
 Whatever the shape, one rule seems right: how much work is in progress at once should be set by how much I can review, not by how many agents can run. If the queue grows faster than I can clear it, the agents slow down, not me.
 
