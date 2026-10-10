@@ -5,7 +5,7 @@ permalink: /work/
 ---
 <section class="hero">
   <p class="eyebrow">Work with me</p>
-  <h1>{{ offer.headline }}</h1>
+  <h1>{{ offer.headline | safe }}</h1>
   <p class="lede">{{ offer.intro }}</p>
   <p class="lede-2">{{ offer.pitch | safe }}</p>
 </section>
