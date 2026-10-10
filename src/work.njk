@@ -22,10 +22,6 @@ permalink: /work/
   <h3 class="sub">What I set up</h3>
   {% include "layers.njk" %}
   <p class="note">{{ offer.factory.oversight }}</p>
-
-  <h3 class="sub">How it works</h3>
-  {%- set steps = offer.factory.steps %}
-  {% include "steps.njk" %}
   <p class="note">{{ offer.factory.ownership }}</p>
 
   <h3 class="sub">Pricing</h3>
@@ -37,10 +33,7 @@ permalink: /work/
   <p class="eyebrow">No developers?</p>
   <h2 id="build-title">I build it for you.</h2>
   <p class="section-text">{{ offer.build.intro }}</p>
-
-  <h3 class="sub">How it works</h3>
-  {%- set steps = offer.build.steps %}
-  {% include "steps.njk" %}
+  <p class="section-text">{{ offer.build.how }}</p>
   <p class="note">{{ offer.build.ownership }}</p>
 
   <h3 class="sub">Pricing</h3>

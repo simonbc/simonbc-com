@@ -27,7 +27,7 @@ export default {
 
   factory: {
     intro:
-      "For teams with developers who want to build with AI coding agents without chatting with them all day. I set up a factory around your codebase and the tools you already use, then hand it over or run it for you.",
+      "For teams with developers who want to build with AI coding agents without chatting with them all day. I set up a factory around your codebase and the tools you already use, and we start building with it right away. From there your developers take over, or I stay on and run it for you, whichever suits you.",
     layers: [
       {
         title: "Where agents run",
@@ -48,24 +48,6 @@ export default {
     ],
     oversight:
       "Agents ask clear questions instead of pulling someone into a chat. The agents do the work; your developers make the calls.",
-    steps: [
-      {
-        title: "We agree the setup.",
-        text: "A 30 minute call to pick the codebase, your tools and a first real task to run through the factory.",
-      },
-      {
-        title: "I build the factory.",
-        text: "Over two weeks I set up each layer around your codebase and connect it to your tools.",
-      },
-      {
-        title: "We run real tasks.",
-        text: "Your first tasks go through the factory end to end. I tune it where it stumbles.",
-      },
-      {
-        title: "You own it.",
-        text: "A written handover of how it works and how to change it. Run it yourself, or have me run it for you.",
-      },
-    ],
     ownership:
       "Skelcrew will be open source, so you can keep running your factory without me. All code and accounts are yours, and model and server costs go on your own accounts.",
     plans: [
@@ -87,24 +69,8 @@ export default {
   build: {
     intro:
       "For design studios, agencies and small companies that know what they want built but have no developers to build it: a product idea, an internal tool you keep wishing for, or a prototype that has outgrown Figma.",
-    steps: [
-      {
-        title: "You send a task.",
-        text: "A short description, a mockup, a screen recording: whatever you would give a developer.",
-      },
-      {
-        title: "I scope it.",
-        text: "Each task is sized and planned. If something is unclear, I ask a few short questions.",
-      },
-      {
-        title: "Agents build, I lead.",
-        text: "The agent crew writes the code. I own the architecture, test the result and make sure it holds up.",
-      },
-      {
-        title: "You get software you can use.",
-        text: "Shipped to a preview or live, with a short note on what changed.",
-      },
-    ],
+    how:
+      "You send tasks the way you would to a developer: a short description, a mockup, a screen recording. I set up a factory for your project and start building it, owning the architecture and making sure the result holds up. Later, developers of your own can take over, or I can stay on as your developer for as long as you need.",
     ownership:
       "Everything runs async: written updates, no standing meetings. All code and accounts are yours.",
     plans: [

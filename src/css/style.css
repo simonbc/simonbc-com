@@ -154,14 +154,6 @@ p { margin: 0 0 1.1rem; }
   padding: 1.5rem;
 }
 
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
-  gap: 1rem;
-  margin: 0 0 1.75rem;
-  padding: 0;
-  list-style: none;
-}
 .layers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -173,19 +165,6 @@ p { margin: 0 0 1.1rem; }
 .layers h4 { margin-bottom: 0.75rem; }
 .layers p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
 .section-text { max-width: 46rem; }
-.steps p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
-.step-num {
-  display: inline-grid;
-  place-items: center;
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 1.25rem;
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--accent-text);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
 
 .plans { display: grid; gap: 1rem; }
 @media (min-width: 46rem) { .plans { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); } }
