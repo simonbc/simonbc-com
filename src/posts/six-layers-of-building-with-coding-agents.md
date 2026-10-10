@@ -25,3 +25,5 @@ That's the gap I'm building [Skelcrew](https://skelcrew.dev) for.
 It owns coordination and oversight, and works with the tools you already use for the rest. The agents do the work and you get pulled in only when decisions are needed from you.
 
 You can [sign up at skelcrew.dev](https://skelcrew.dev) and I'll email you when it's ready to try.
+
+If you'd like a setup like this for your own team, I set up software factories on Skelcrew and can run them for you. See [Work with me](/work/).
