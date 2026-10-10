@@ -13,10 +13,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2":
-      "fonts/newsreader.woff2",
-    "node_modules/@fontsource-variable/newsreader/files/newsreader-latin-wght-italic.woff2":
-      "fonts/newsreader-italic.woff2",
+    "node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2":
+      "fonts/jetbrains-mono.woff2",
+    "node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-italic.woff2":
+      "fonts/jetbrains-mono-italic.woff2",
   });
 
   eleventyConfig.addFilter("readableDate", (date) =>
