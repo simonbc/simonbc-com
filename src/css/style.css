@@ -233,3 +233,8 @@ blockquote { margin: 1.5rem 0; padding-left: 1.25rem; border-left: 3px solid var
 }
 .site-footer p { margin: 0; }
 .site-footer a { color: inherit; }
+
+table { width: 100%; margin: 1.5rem 0; border-collapse: collapse; font-size: 0.9rem; }
+th, td { padding: 0.55rem 0.75rem 0.55rem 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { font-weight: 700; border-bottom-color: var(--text); }
+.prose { overflow-wrap: break-word; }
