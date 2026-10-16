@@ -1,8 +1,8 @@
 export default {
   headline:
-    'I set up <span class="highlight">software factories</span> <span class="nowrap">for small teams.</span>',
+    'I set up <span class="highlight">AI coding agents</span> <span class="nowrap">for small teams.</span>',
   intro:
-    "A software factory is a crew of AI coding agents working in parallel and unattended on a server. Each task goes from spec to code to review to ship, and people step in only when there's a decision to make.",
+    "I call the setup a software factory: a crew of agents working in parallel and unattended on a server. Each task goes from spec to code to review to ship, and people step in only when there's a decision to make.",
   pitch:
     "I build mine on <a href=\"https://skelcrew.dev\">Skelcrew</a>, my own agent harness, and bring twenty years as a software engineer to the decisions that need a human.",
 
