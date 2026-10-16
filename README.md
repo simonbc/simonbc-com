@@ -35,7 +35,7 @@ Push to `main`. The GitHub Actions workflow in `.github/workflows/deploy.yml` bu
 ## Layout
 
 - `src/_data/site.js`: site title, URL, description and email
-- `src/_data/offer.js`: the offer copy (steps, pricing, next step), shared by the home and Work with me pages
+- `src/_data/offer.js`: the offer copy (factory setup and next step), shared by the home and Work with me pages
 - `src/_includes/`: layouts and partials
 - `src/css/style.css`: all styles; the JetBrains Mono font is self-hosted from `@fontsource-variable/jetbrains-mono`
 - `src/index.njk`, `src/work.njk`, `src/writing.njk`, `src/about.md`: pages

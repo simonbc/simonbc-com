@@ -5,10 +5,7 @@ layout: base.njk
   <h1>{{ offer.headline | safe }}</h1>
   <p class="lede">{{ offer.intro }}</p>
   <p class="lede-2">{{ offer.pitch | safe }}</p>
-</section>
-
-<section class="section paths-section" aria-label="Two ways to work with me">
-  {% include "paths.njk" %}
+  <p class="actions"><a class="button" href="/work/">See what I set up</a></p>
 </section>
 
 {%- set posts = collections.posts | reverse | head(3) %}

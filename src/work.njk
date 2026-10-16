@@ -7,15 +7,11 @@ permalink: /work/
   <p class="eyebrow">Work with me</p>
   <h1>{{ offer.headline | safe }}</h1>
   <p class="lede">{{ offer.intro }}</p>
-  <p class="lede-2">{{ offer.pitch | safe }} I work with small teams in one of two ways, depending on whether you have developers of your own.</p>
-  <p class="actions">
-    <a class="button" href="#factory">Have developers?</a>
-    <a class="button button-quiet" href="#build">No developers?</a>
-  </p>
+  <p class="lede-2">{{ offer.pitch | safe }}</p>
 </section>
 
 <section class="section" id="factory" aria-labelledby="factory-title">
-  <p class="eyebrow">Have developers?</p>
+  <p class="eyebrow">For teams with developers</p>
   <h2 id="factory-title">I set up your factory.</h2>
   <p class="section-text">{{ offer.factory.intro }}</p>
 
@@ -23,22 +19,6 @@ permalink: /work/
   {% include "layers.njk" %}
   <p class="note">{{ offer.factory.oversight }}</p>
   <p class="note">{{ offer.factory.ownership }}</p>
-
-  <h3 class="sub">Pricing</h3>
-  {%- set plans = offer.factory.plans %}
-  {% include "plans.njk" %}
-</section>
-
-<section class="section" id="build" aria-labelledby="build-title">
-  <p class="eyebrow">No developers?</p>
-  <h2 id="build-title">I build it for you.</h2>
-  <p class="section-text">{{ offer.build.intro }}</p>
-  <p class="section-text">{{ offer.build.how }}</p>
-  <p class="note">{{ offer.build.ownership }}</p>
-
-  <h3 class="sub">Pricing</h3>
-  {%- set plans = offer.build.plans %}
-  {% include "plans.njk" %}
 </section>
 
 {% include "next-step.njk" %}

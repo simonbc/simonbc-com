@@ -1,9 +1,0 @@
-<div class="plans">
-  {%- for plan in plans %}
-  <section class="card plan{% if loop.first %} plan-first{% endif %}">
-    <h4>{{ plan.name }}</h4>
-    <p class="price"><span class="amount">{{ plan.price }}</span> <span class="unit">{{ plan.unit }}</span></p>
-    <p>{{ plan.text }}</p>
-  </section>
-  {%- endfor %}
-</div>

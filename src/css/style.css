@@ -166,16 +166,6 @@ p { margin: 0 0 1.1rem; }
 .layers p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
 .section-text { max-width: 46rem; }
 
-.plans { display: grid; gap: 1rem; }
-@media (min-width: 46rem) { .plans { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); } }
-.plan { padding: 2rem; }
-.plan-first { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.plan h4 { font-size: 0.9rem; font-weight: 600; letter-spacing: 0; color: var(--muted); }
-.price { margin: 0.25rem 0 1.25rem; }
-.price .amount { display: block; font-size: 2.5rem; font-weight: 650; line-height: 1.1; letter-spacing: -0.03em; }
-.price .unit { font-size: 0.85rem; color: var(--muted); }
-.plan p { font-size: 0.95rem; }
-
 .next-step {
   margin: 2rem 0 4rem;
   padding: 3rem 2rem;
@@ -229,14 +219,6 @@ th, td { padding: 0.55rem 0.75rem 0.55rem 0; border-bottom: 1px solid var(--rule
 th { font-weight: 700; border-bottom-color: var(--text); }
 .prose { overflow-wrap: break-word; }
 
-.paths { display: grid; gap: 1rem; }
-@media (min-width: 46rem) { .paths { grid-template-columns: 1fr 1fr; } }
-.path { display: block; padding: 2rem; text-decoration: none; transition: border-color 0.15s ease; }
-.path:hover { color: inherit; border-color: var(--accent); }
-.path h2 { margin-bottom: 0.75rem; }
-.path p:not(.eyebrow) { color: var(--muted); }
-.path-cta { font-size: 0.9rem; font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent-ink); text-underline-offset: 0.18em; }
-.path-cta::after { content: " \2192"; }
 .sub { margin: 3rem 0 1.25rem; font-size: 1.3rem; }
 .section > .section-text { margin-bottom: 0; }
-#factory, #build { scroll-margin-top: 1rem; }
+#factory { scroll-margin-top: 1rem; }
