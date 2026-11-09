@@ -93,7 +93,7 @@ a:hover { color: var(--accent-ink); text-decoration-thickness: 2px; }
 
 /* Type */
 
-h1, h2, h3, h4, .site-name, .price .amount { font-family: var(--display); }
+h1, h2, h3, h4, .site-name { font-family: var(--display); }
 h1, h2, h3, h4 { font-weight: 650; line-height: 1.12; letter-spacing: -0.025em; text-wrap: balance; }
 h1 { font-size: clamp(2.1rem, 1.3rem + 3.4vw, 3.5rem); margin: 0 0 1.5rem; }
 h2 { font-size: clamp(1.6rem, 1.25rem + 1.4vw, 2.25rem); margin: 0 0 1.75rem; }
@@ -147,37 +147,11 @@ p { margin: 0 0 1.1rem; }
 .more { margin-top: 1.75rem; font-size: 0.9rem; }
 .more a::after { content: " \2192"; }
 
-.card {
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-}
-
-.layers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1rem;
-  margin: 0 0 1.75rem;
-  padding: 0;
-  list-style: none;
-}
-.layers h4 { margin-bottom: 0.75rem; }
-.layers p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
-.section-text { max-width: 46rem; }
-
-.next-step {
-  margin: 2rem 0 4rem;
-  padding: 3rem 2rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--rule);
-  background: var(--block);
-  color: var(--block-text);
-  text-align: center;
-}
-.next-step h2 { margin-bottom: 1rem; }
-.next-step p { max-width: 36rem; margin-left: auto; margin-right: auto; font-size: 1.05rem; }
-.next-step .button { margin-top: 0.75rem; }
+.more-plain { margin-top: 1.75rem; font-size: 0.9rem; color: var(--muted); }
+.more-plain a { color: var(--text); }
+.hero h1 a.highlight { text-decoration: none; }
+.hero h1 a.highlight:hover { text-decoration: underline; text-decoration-thickness: 3px; }
+#now, #writing { scroll-margin-top: 1rem; }
 
 /* Prose pages and posts */
 
@@ -219,6 +193,3 @@ th, td { padding: 0.55rem 0.75rem 0.55rem 0; border-bottom: 1px solid var(--rule
 th { font-weight: 700; border-bottom-color: var(--text); }
 .prose { overflow-wrap: break-word; }
 
-.sub { margin: 3rem 0 1.25rem; font-size: 1.3rem; }
-.section > .section-text { margin-bottom: 0; }
-#factory { scroll-margin-top: 1rem; }

@@ -1,21 +1,21 @@
 ---
 layout: base.njk
 ---
-<section class="hero">
-  <h1>{{ offer.headline | safe }}</h1>
-  <p class="lede">{{ offer.intro }}</p>
-  <p class="lede-2">{{ offer.pitch | safe }}</p>
-  <p class="actions"><a class="button" href="/work/">See what I set up</a></p>
+<section class="hero now" aria-labelledby="now">
+  <p class="eyebrow" id="now">Now · {{ now.updated | readableMonth }}</p>
+  <h1>{{ now.headline | safe }}</h1>
+  <p class="lede">{{ now.text }}</p>
+  <p class="actions"><a class="button" href="https://skel.run">Visit skel.run</a></p>
 </section>
 
-{%- set posts = collections.posts | reverse | head(3) %}
-{%- if posts.length %}
+{%- set posts = collections.posts | reverse %}
 <section class="section prose-width" aria-labelledby="writing">
   <p class="eyebrow">Writing</p>
-  <h2 id="writing">Latest posts</h2>
+  <h2 id="writing">Notes on building software with coding agents</h2>
+  {%- if posts.length %}
   {% include "post-list.njk" %}
-  <p class="more"><a href="/writing/">All writing</a></p>
+  {%- else %}
+  <p class="muted">No posts yet.</p>
+  {%- endif %}
+  <p class="more-plain">Subscribe with the <a href="/feed.xml">Atom feed</a>.</p>
 </section>
-{%- endif %}
-
-{% include "next-step.njk" %}

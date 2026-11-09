@@ -5,7 +5,7 @@ description: Why I'm building software for clients with my own agent harness, an
 draft: false
 ---
 
-> **Update:** the offer has changed since I wrote this. I now set up software factories for small teams and can run them for you. See [Work with me](/work/) for the current details.
+> **Update:** I no longer take on client work. I'm building [Skel](https://skel.run) full time as a startup.
 
 I've been experimenting with AI coding tools since April, and in September I started building Skelcrew, my own agent harness. It runs coding agents through tasks, from a short description to working software, with me acting as the team lead rather than the person typing the code.
 
@@ -31,7 +31,7 @@ I've also come to think the goal isn't productivity. Building is already fast. T
 
 You send tasks the way you would to a developer: a description, a mockup, a screen recording. I scope them, the agent crew builds them, and I make sure the result holds up. Everything runs async, with written updates and no standing meetings.
 
-We start with a two week pilot on one clearly scoped thing. If it works, we continue month to month. The details are on the [work with me](/work/) page.
+We start with a two week pilot on one clearly scoped thing. If it works, we continue month to month.
 
 ## Building in public
 

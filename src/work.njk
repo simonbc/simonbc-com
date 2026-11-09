@@ -1,24 +1,6 @@
 ---
-layout: base.njk
-title: Work with me
+layout: redirect.njk
 permalink: /work/
+redirectTo: /
+eleventyExcludeFromCollections: true
 ---
-<section class="hero">
-  <p class="eyebrow">Work with me</p>
-  <h1>{{ offer.headline | safe }}</h1>
-  <p class="lede">{{ offer.intro }}</p>
-  <p class="lede-2">{{ offer.pitch | safe }}</p>
-</section>
-
-<section class="section" id="factory" aria-labelledby="factory-title">
-  <p class="eyebrow">For teams with developers</p>
-  <h2 id="factory-title">I set up your factory.</h2>
-  <p class="section-text">{{ offer.factory.intro }}</p>
-
-  <h3 class="sub">What I set up</h3>
-  {% include "layers.njk" %}
-  <p class="note">{{ offer.factory.oversight }}</p>
-  <p class="note">{{ offer.factory.ownership }}</p>
-</section>
-
-{% include "next-step.njk" %}

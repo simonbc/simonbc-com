@@ -2,7 +2,7 @@ export default {
   title: "Simon Carstensen",
   author: "Simon Carstensen",
   description:
-    "I set up AI coding agents for small teams: a software factory of agents working in parallel and unattended, from spec to ship, built on my own agent harness, Skelcrew.",
+    "Simon Carstensen writes about building software with AI coding agents, and is building Skel as a startup.",
   url: "https://simonbc.com",
   email: "me@simonbc.com",
   language: "en",

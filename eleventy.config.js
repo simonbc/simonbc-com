@@ -27,6 +27,13 @@ export default function (eleventyConfig) {
       timeZone: "UTC",
     })
   );
+  eleventyConfig.addFilter("readableMonth", (date) =>
+    new Date(date).toLocaleDateString("en-GB", {
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    })
+  );
   eleventyConfig.addFilter("head", (array, n) => array.slice(0, n));
   eleventyConfig.addFilter("isoDate", (date) =>
     new Date(date).toISOString().slice(0, 10)

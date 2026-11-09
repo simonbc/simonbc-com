@@ -1,15 +1,6 @@
 ---
-layout: base.njk
-title: Writing
+layout: redirect.njk
 permalink: /writing/
+redirectTo: /
+eleventyExcludeFromCollections: true
 ---
-<div class="prose">
-  <h1>Writing</h1>
-  <p>Notes on building software with AI coding agents, written in public. Subscribe with the <a href="/feed.xml">Atom feed</a>.</p>
-  {%- set posts = collections.posts | reverse %}
-  {%- if posts.length %}
-  {% include "post-list.njk" %}
-  {%- else %}
-  <p class="muted">No posts yet.</p>
-  {%- endif %}
-</div>
