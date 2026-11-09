@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I started out in Y Combinator's first batch in 2005, co-founding Infogami with Aaron Swartz, and in 2007 we built the original Jottit together. Since then I've worked as a full stack developer in JavaScript and Python, from early products to the core of an ERP system at TRAEDE, where orders, invoices and credit notes had to come out right every time.
+I started out in Y Combinator's first batch in 2005, co-founding Infogami with Aaron Swartz, and in 2007 we built the original Jottit together. Since then I've worked as a full stack developer in JavaScript and Python, from early products to the core of an ERP system at TRAEDE.
 
 That background shapes how I work with agents. They write code fast, but someone still has to decide what to build, keep the architecture sound and know when the result holds up.
 
