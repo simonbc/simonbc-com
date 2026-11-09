@@ -151,7 +151,7 @@ p { margin: 0 0 1.1rem; }
 .more-plain a { color: var(--text); }
 .hero h1 a.highlight { text-decoration: none; }
 .hero h1 a.highlight:hover { text-decoration: underline; text-decoration-thickness: 3px; }
-#now, #writing { scroll-margin-top: 1rem; }
+#now, #blog { scroll-margin-top: 1rem; }
 
 /* Prose pages and posts */
 
